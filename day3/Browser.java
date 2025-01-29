@@ -1,27 +1,31 @@
-package week1.day3;
+package week2.day3;
 
-public class Browser{
+public class Browser {
 	
 	
-	public String launchBrowser(String a) {
+	public void openURL() {
 		
-		return(a);
+		System.out.println("Url is opened");
+
+	}
+	
+public void closeBrowser() {
 		
+		System.out.println("Browser is closed");
 
 	}
 	
-	private void loadUrl() {
-		
-		System.out.println("Application url Load successfully");
+public void navigateBack(){
+	
+	System.out.println("navigated back");
 
-	}
+}
 
 	public static void main(String[] args) {
-	
-Browser bNname=new Browser();
-
-   System.out.println(bNname.launchBrowser("Browser Launched successfully"));
-   bNname.loadUrl();
+		
+		Browser br = new Browser();
+		
+		
 
 	}
 
